@@ -158,9 +158,8 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton size='lg' asChild>
-              <a href='#'>
+              <a href='/'>
                 <div className='flex aspect-square items-center justify-center rounded-lg'>
-                  {/* <Command className="size-4" /> */}
                   <img src={GeutImg.src} alt='Geut Logo' className='size-8' />
                 </div>
                 <div className='grid flex-1 text-left text-sm leading-tight'>
