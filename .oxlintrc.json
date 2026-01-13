@@ -1,6 +1,16 @@
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["eslint", "unicorn", "typescript", "oxc", "jsx-a11y", "react", "react-perf"],
+  "plugins": [
+    "eslint",
+    "unicorn",
+    "typescript",
+    "oxc",
+    "jsx-a11y",
+    "react",
+    "react-perf",
+    "node",
+    "promise"
+  ],
   "categories": {},
   "rules": {
     "constructor-super": "warn",
@@ -47,7 +57,7 @@
     "no-unused-expressions": "warn",
     "no-unused-labels": "warn",
     "no-unused-private-class-members": "warn",
-    "no-unused-vars": "warn",
+    "no-unused-vars": "error",
     "no-useless-backreference": "warn",
     "no-useless-catch": "warn",
     "no-useless-escape": "warn",

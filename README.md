@@ -99,6 +99,7 @@ The template includes modular navigation components that can be easily customize
 ### Layout
 
 The inset sidebar layout provides a professional application feel. The sidebar includes:
+
 - Header with branding/logo
 - Main content area with organized navigation sections
 - Footer with user profile and actions
@@ -107,12 +108,12 @@ Modify `src/components/app-sidebar.tsx` for sidebar content and `src/components/
 
 ## 📝 Scripts
 
-| Command | Description |
-|---------|-------------|
-| `bun run dev` | Start development server |
-| `bun run build` | Build for production |
-| `bun run preview` | Preview production build |
-| `bun run astro check` | Type check Astro files |
+| Command               | Description              |
+| --------------------- | ------------------------ |
+| `bun run dev`         | Start development server |
+| `bun run build`       | Build for production     |
+| `bun run preview`     | Preview production build |
+| `bun run astro check` | Type check Astro files   |
 
 ## 🚀 Deployment
 

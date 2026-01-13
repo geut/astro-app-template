@@ -1,6 +1,5 @@
 'use client'
 
-import * as React from 'react'
 import {
   BookOpen,
   Bot,
@@ -12,7 +11,9 @@ import {
   Settings2,
   SquareTerminal,
 } from 'lucide-react'
+import * as React from 'react'
 
+import GeutImg from '@/assets/geut-logo.svg'
 import { NavMain } from '@/components/nav-main'
 import { NavProjects } from '@/components/nav-projects'
 import { NavSecondary } from '@/components/nav-secondary'
@@ -26,8 +27,6 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from '@/components/ui/sidebar'
-
-import GeutImg from '@/assets/geut-logo.svg'
 
 const data = {
   user: {
@@ -154,19 +153,19 @@ const data = {
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
-    <Sidebar variant="inset" {...props}>
+    <Sidebar variant='inset' {...props}>
       <SidebarHeader>
         <SidebarMenu>
           <SidebarMenuItem>
-            <SidebarMenuButton size="lg" asChild>
-              <a href="#">
-                <div className="flex aspect-square items-center justify-center rounded-lg">
+            <SidebarMenuButton size='lg' asChild>
+              <a href='#'>
+                <div className='flex aspect-square items-center justify-center rounded-lg'>
                   {/* <Command className="size-4" /> */}
-                  <img src={GeutImg.src} alt="Geut Logo" className="size-8" />
+                  <img src={GeutImg.src} alt='Geut Logo' className='size-8' />
                 </div>
-                <div className="grid flex-1 text-left text-sm leading-tight">
-                  <span className="truncate font-medium">geut</span>
-                  <span className="truncate text-xs">App Template</span>
+                <div className='grid flex-1 text-left text-sm leading-tight'>
+                  <span className='truncate font-medium'>geut</span>
+                  <span className='truncate text-xs'>App Template</span>
                 </div>
               </a>
             </SidebarMenuButton>
@@ -176,7 +175,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       <SidebarContent>
         <NavMain items={data.navMain} />
         <NavProjects projects={data.projects} />
-        <NavSecondary items={data.navSecondary} className="mt-auto" />
+        <NavSecondary items={data.navSecondary} className='mt-auto' />
       </SidebarContent>
       <SidebarFooter>
         <NavUser user={data.user} />
