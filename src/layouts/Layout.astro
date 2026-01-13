@@ -1,0 +1,21 @@
+---
+import { AppLayout } from '@/components/app-layout'
+
+import '@/styles/global.css'
+---
+
+<!doctype html>
+<html lang="en" class="m-0 w-full h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro Base Template</title>
+  </head>
+  <body class="antialiased m-0 w-full h-full">
+    <AppLayout client:only="react">
+      <slot />
+    </AppLayout>
+  </body>
+</html>
